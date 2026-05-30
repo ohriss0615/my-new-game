@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>강화 게임</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>강화 게임</h1>
+
+<h2 id="money">돈: 1000원</h2>
+
+<div class="box">
+
+<p id="item">아이템: 없음</p>
+<p id="level">강화 수치: 없음</p>
+<p id="chance">성공 확률: 없음</p>
+<p id="cost">강화 비용: 없음</p>
+<p id="sellPrice">판매가: 없음</p>
+
+</div>
+
+<button onclick="buyItem()">
+목검 구매 (500원)
+</button>
+
+<button onclick="upgrade()">
+강화하기
+</button>
+
+<button onclick="sellItem()">
+판매하기
+</button>
+
+<hr>
+
+<h2>실패 방지권</h2>
+
+<p id="protectCount">
+0개
+</p>
+
+<button onclick="toggleProtect()">
+실패 방지권 OFF
+</button>
+
+<button onclick="buyProtect(1,5000)">
+1개 구매
+</button>
+
+<button onclick="buyProtect(10,45000)">
+10개 구매
+</button>
+
+<button onclick="buyProtect(100,450000)">
+100개 구매
+</button>
+
+<hr>
+
+<h2>포션</h2>
+
+<p id="potions"></p>
+
+<p id="activePotion">
+적용중인 포션: 없음
+</p>
+
+<button onclick="buyPotion(1.5,15000)">
+1.5배 구매
+</button>
+
+<button onclick="buyPotion(2,50000)">
+2배 구매
+</button>
+
+<button onclick="buyPotion(3,100000)">
+3배 구매
+</button>
+
+<br><br>
+
+<button onclick="usePotion(1.5)">
+1.5배 사용
+</button>
+
+<button onclick="usePotion(2)">
+2배 사용
+</button>
+
+<button onclick="usePotion(3)">
+3배 사용
+</button>
+
+<hr>
+
+<h2 id="message">
+게임 시작!
+</h2>
+
+<script src="script.js"></script>
+
+</body>
+</html>
